@@ -36,7 +36,7 @@ public class DataValidation implements RegexUtility {
     @Override
     public boolean isValidEmailAddress(String email)
     {
-        regexPattern = "[a-zA-Z]\\w+[@][a-zA-Z]\\w+[.][a-z]{1,3}";
+        regexPattern = "[a-zA-Z]\\w+[@][a-zA-Z]\\w+[.][a-zA-Z]{1,3}";
         pattern = Pattern.compile(regexPattern);
         matcher = pattern.matcher(email);
         return matcher.matches();
