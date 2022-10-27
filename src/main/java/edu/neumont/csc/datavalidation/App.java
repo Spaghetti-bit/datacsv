@@ -46,7 +46,7 @@ public final class App {
                 Boolean validName = validator.isValidHumanName(person.name);
                 Boolean validSSN = validator.isValidSSN(person.ssn);
                 Boolean validPhone = validator.isValidPhoneNumber(person.phoneNumber);
-                Boolean validEmail = validator.isValidHumanName(person.email);
+                Boolean validEmail = validator.isValidEmailAddress(person.email);
     
                 if (validName && validSSN && validPhone && validEmail)
                 {
@@ -57,5 +57,11 @@ public final class App {
         {
 
         }
+        for (Person person : people) {
+            //System.out.println("===============================");
+            System.out.println(person.toString());
+            System.out.println("===============================");
+        }
+        System.out.println(":)");
     }
 }
